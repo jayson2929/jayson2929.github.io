@@ -73,6 +73,16 @@
             text-decoration: underline;
         }
     </style>
+<script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === 'none' || element.style.display === '') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -83,7 +93,11 @@
     <div class="resume-section education">
         <h2 style="text-decoration: underline;">Education</h2>
         <div class="entry-title">
-            <h3><a href="ewha.html">Ewha Womans University</a></h3>
+            <h3><a href="javascript:void(0)" onclick="toggleDetails('ewha-details')">Ewha Womans University</a></h3>
+<div id="ewha-details" style="display: none;">
+    <img src="ewha_pic.jpg" alt="Ewha Womans University" style="width: 100%; max-width: 300px;">
+    <p>Ewha Womans University is one of the most prestigious universities in South Korea, known for its strong focus on economics and humanities.</p>
+</div>
 <p style="text-align: left;"><i>Bachelor of Arts in Economics (Transfer)</i></p>
             <div class="location-date">Seoul, South Korea | Expected Graduation: February 2025</div>
         </div>
@@ -93,20 +107,36 @@
         </ul>
 
         <div class="entry-title">
-            <h3><a href="cnu.html">Chungnam National University</a></h3>
+            <h3><a href="javascript:void(0)" onclick="toggleDetails('cnu-details')">Chungnam National University</a></h3>
+<div id="cnu-details" style="display: none;">
+    <img src="cnu_pic.jpg" alt="Chungnam National University" style="width: 100%; max-width: 300px;">
+    <p>Chungnam National University is a leading institution in South Korea, offering diverse programs including engineering and humanities.</p>
+</div>
 <p style="text-align: left;"><i>Bachelor of Arts in English Language and Literature, Bachelor of Engineering in Cognitive Software Engineering (Double Major)</i></p>
             <div class="location-date">Daejeon, South Korea | March 2017 - February 2021</div>
         </div>
         <ul>
             <li>Major GPA: 3.7/4.5, Final GPA: 3.6/4.5</li>
-            <li>Exchange Programs: <a href="stony_brook.html">Stony Brook University</a>, USA; <a href="tu_berlin.html">Technical University Berlin</a>, Germany</li>
+            <li>Exchange Programs: <a href="javascript:void(0)" onclick="toggleDetails('stony-brook-details')">Stony Brook University</a>
+<div id="stony-brook-details" style="display: none;">
+    <img src="stony_brook_pic.jpg" alt="Stony Brook University" style="width: 100%; max-width: 300px;">
+    <p>Stony Brook University is a renowned public research university located in New York, known for its strong programs in science and technology.</p>
+</div>, USA; <a href="javascript:void(0)" onclick="toggleDetails('tu-berlin-details')">Technical University Berlin</a>
+<div id="tu-berlin-details" style="display: none;">
+    <img src="tu_berlin_pic.jpg" alt="Technical University Berlin" style="width: 100%; max-width: 300px;">
+    <p>Technical University Berlin is a prominent German university with a strong focus on engineering and technology.</p>
+</div>, Germany</li>
         </ul>
     </div>
 
     <div class="resume-section work-experience">
         <h2 style="text-decoration: underline;">Work Experience</h2>
         <div class="entry-title">
-            <h3><a href="fcb.html">FCB Financial Academic Association</a></h3>
+            <h3><a href="javascript:void(0)" onclick="toggleDetails('fcb-details')">FCB Financial Academic Association</a></h3>
+<div id="fcb-details" style="display: none;">
+    <img src="fcb_pic.jpg" alt="FCB Financial Academic Association" style="width: 100%; max-width: 300px;">
+    <p>FCB Financial Academic Association is a well-known organization providing financial analysis and modeling training, particularly in valuation and ESG strategies.</p>
+</div>
             <div class="location-date">Seoul, South Korea | August 2024 - September 2024</div>
         </div>
         <ul>
@@ -116,7 +146,11 @@
         </ul>
 
         <div class="entry-title">
-            <h3><a href="kier.html">Korean Energy Institute of Research (KIER)</a></h3>
+            <h3><a href="javascript:void(0)" onclick="toggleDetails('kier-details')">Korean Energy Institute of Research (KIER)</a></h3>
+<div id="kier-details" style="display: none;">
+    <img src="kier_pic.jpg" alt="KIER" style="width: 100%; max-width: 300px;">
+    <p>KIER is a leading research institute focusing on renewable energy and environmental solutions in South Korea.</p>
+</div>
             <div class="location-date">Daedeok Innopolis, South Korea | June 2020 - August 2020</div>
         </div>
         <ul>
