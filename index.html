@@ -17,6 +17,7 @@
         h1 {
             font-size: 28px;
             color: #333;
+            text-align: center;
         }
 
         h2 {
@@ -47,6 +48,22 @@
             border: 1px solid #ccc;
             padding: 15px;
             border-radius: 5px;
+            position: relative;
+        }
+
+        .location-date {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 16px;
+            color: #666;
+            text-align: right;
+        }
+
+        .entry-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         a {
@@ -66,15 +83,19 @@
 
     <div class="resume-section education">
         <h2>Education</h2>
-        <h3>Ewha Womans University</h3>
-        <p>Bachelor of Arts in Economics (Transfer) <br> Seoul, South Korea <br> Expected Graduation: February 2025</p>
+        <div class="entry-title">
+            <h3>Ewha Womans University</h3>
+            <div class="location-date">Seoul, South Korea<br>Expected Graduation: February 2025</div>
+        </div>
         <ul>
             <li>Major GPA: 3.0/4.3</li>
             <li>Relevant Coursework: Energy and Environmental Economics, Financial Engineering, Corporate Finance, Macroeconomics, Econometrics</li>
         </ul>
 
-        <h3>Chungnam National University</h3>
-        <p>Bachelor of Arts in English Language and Literature, Bachelor of Engineering in Cognitive Software Engineering (Double Major) <br> Daejeon, South Korea <br> March 2017 - February 2021</p>
+        <div class="entry-title">
+            <h3>Chungnam National University</h3>
+            <div class="location-date">Daejeon, South Korea<br>March 2017 - February 2021</div>
+        </div>
         <ul>
             <li>Major GPA: 3.7/4.5, Final GPA: 3.6/4.5</li>
             <li>Exchange Programs: Stony Brook University, USA; TU Berlin, Germany</li>
@@ -83,16 +104,20 @@
 
     <div class="resume-section work-experience">
         <h2>Work Experience</h2>
-        <h3>FCB Financial Academic Association</h3>
-        <p>Valuation Analyst <br> Seoul, South Korea <br> August 2024 - September 2024</p>
+        <div class="entry-title">
+            <h3>FCB Financial Academic Association</h3>
+            <div class="location-date">Seoul, South Korea<br>August 2024 - September 2024</div>
+        </div>
         <ul>
             <li>Initiated a valuation of a Korean cement company focusing on ESG-driven strategies.</li>
             <li>Conducted due diligence on market segments using 3-statement financial analysis, highlighting the resilience of domestic markets.</li>
             <li>Incorporated LBO analysis and M&A insights for the cement company’s environmental business division.</li>
         </ul>
 
-        <h3>Korean Energy Institute of Research (KIER)</h3>
-        <p>Summer Data Analyst <br> Daedeok Innopolis, South Korea <br> June 2020 - August 2020</p>
+        <div class="entry-title">
+            <h3>Korean Energy Institute of Research (KIER)</h3>
+            <div class="location-date">Daedeok Innopolis, South Korea<br>June 2020 - August 2020</div>
+        </div>
         <ul>
             <li>Conducted analysis of Korea's wind and solar energy data, exploring renewable energy challenges in East Asia.</li>
             <li>Analyzed profitability of solar panels in urban areas using Matplotlib and Excel.</li>
