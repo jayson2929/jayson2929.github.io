@@ -83,6 +83,11 @@
             }
         }
     </script>
+<style>
+        #interests-details img {
+            max-width: 400px;
+        }
+    </style>
 </head>
 
 <body>
@@ -163,11 +168,43 @@
     <div class="resume-section additional-info">
         <h2>Additional Information</h2>
         <ul>
-            <li><a href="languages.html">Languages</a>: Fluent in English, Native in Korean</li>
-            <li><a href="skills.html">Skills</a>: Excel, PowerPoint, Python, Matplotlib, R, C programming</li>
-            <li><a href="certifications.html">Certifications</a>: FCB Financial Academic Association IB analyst certification</li>
-            <li><a href="leadership.html">Leadership</a>: 2020 Pycon Lightning Talk Presenter, 2019 Chief Editor, 2016 High School Student President</li>
-            <li><a href="interests.html">Interests</a>: Reading, Golf, Learning Sports</li>
+            <li><a href="javascript:void(0)" onclick="toggleDetails('languages-details')">Languages</a></li>
+<div id="languages-details" style="display: none; border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <p>Fluent in English, Native in Korean.</p>
+</div>
+            <li><a href="javascript:void(0)" onclick="toggleDetails('skills-details')">Skills</a></li>
+<div id="skills-details" style="display: none; border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <p>Excel, PowerPoint, Python, Matplotlib, R, C programming.</p>
+</div>
+            <li><a href="javascript:void(0)" onclick="toggleDetails('certifications-details')">Certifications</a></li>
+<div id="certifications-details" style="display: none; border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <p>FCB Financial Academic Association IB analyst certification.</p>
+</div>
+            <li><a href="javascript:void(0)" onclick="toggleDetails('leadership-details')">Leadership</a></li>
+<div id="leadership-details" style="display: none; border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <ul>
+        <li>2020 Pycon Lightning Talk Presenter</li>
+        <li>2019 Chief Editor</li>
+        <li>2016 High School Student President</li>
+    </ul>
+</div>
+            <li><a href="javascript:void(0)" onclick="toggleDetails('interests-details')">Interests</a></li>
+<div id="interests-details" style="display: none; border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="reading_pic.jpg" alt="Reading" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Reading: Enjoys reading a wide variety of books, from fiction to non-fiction.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="golf_pic.jpg" alt="Golf" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Golf: Passionate about learning and playing golf.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="learning_sports_pic.jpg" alt="Learning Sports" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Learning Sports: Enthusiastic about trying new sports and staying active.</p>
+        </div>
+    </div>
+</div>
         </ul>
     </div>
 
