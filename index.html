@@ -73,8 +73,21 @@
             text-decoration: underline;
         }
     </style>
-
-
+<script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === 'none' || element.style.display === '') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+<style>
+        #interests-details img {
+            max-width: 400px;
+        }
+    </style>
 </head>
 
 <body>
@@ -86,15 +99,67 @@
         <h2 style="text-decoration: underline;">Education</h2>
         <div class="entry-title">
             <h3>Ewha Womans University</h3>
-            <div class="location-date">Seoul, South Korea | Expected Graduation: February 2025
-
+            <div class="location-date">Seoul, South Korea | Expected Graduation: February 2025</div>
+        </div>
+        <ul>
+            <li>Major GPA: 3.0/4.3</li>
+            <li>Relevant Coursework: Energy and Environmental Economics, Financial Engineering, Corporate Finance, Macroeconomics, Econometrics</li>
+        </ul>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="ewha_pic.jpg" alt="Ewha Womans University" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;"><i>Bachelor of Arts in Economics (Transfer)</i></p>
+    </div>
+</div>
+        </div>
+        <ul>
+            <li>Major GPA: 3.0/4.3</li>
+            <li>Relevant Coursework: Energy and Environmental Economics, Financial Engineering, Corporate Finance, Macroeconomics, Econometrics</li>
+        </ul>
 
         <div class="entry-title">
             <h3>Chungnam National University</h3>
             <div class="location-date">Daejeon, South Korea | March 2017 - February 2021</div>
         </div>
-        
-        
+        <ul>
+            <li>Major GPA: 3.7/4.5, Final GPA: 3.6/4.5</li>
+            <li>Exchange Programs:</li>
+        </ul>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="english_lit_pic.jpg" alt="English Literature" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;"><i>Bachelor of Arts in English Language and Literature</i></p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="cognitive_software_pic.jpg" alt="Cognitive Software Engineering" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;"><i>Bachelor of Engineering in Cognitive Software Engineering (Double Major)</i></p>
+        </div>
+    </div>
+</div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="cognitive_software_pic.jpg" alt="Cognitive Software Engineering" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;"><i>Bachelor of Engineering in Cognitive Software Engineering (Double Major)</i></p>
+        </div>
+    </div>
+</div>
+        </div>
+        <ul>
+            <li>Major GPA: 3.7/4.5, Final GPA: 3.6/4.5</li>
+            <li>Exchange Programs:</li>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="stony_brook_pic.jpg" alt="Stony Brook University" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Stony Brook University: Renowned public research university in New York, known for strong science and technology programs.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="tu_berlin_pic.jpg" alt="Technical University Berlin" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Technical University Berlin: Prominent German university with a strong focus on engineering and technology.</p>
+        </div>
+    </div>
+</div>
+        </ul>
     </div>
 
     <div class="resume-section work-experience">
@@ -105,11 +170,26 @@
         </div>
         <ul>
             <li>Initiated a valuation of a Korean cement company focusing on ESG-driven strategies.</li>
-
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="esg_valuation_pic.jpg" alt="ESG Valuation" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;">Initiated a valuation of a Korean cement company focusing on ESG-driven strategies.</p>
+    </div>
+</div>
             <li>Conducted due diligence on market segments using 3-statement financial analysis, highlighting the resilience of domestic markets.</li>
-
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="due_diligence_pic.jpg" alt="Due Diligence" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;">Conducted due diligence on market segments using 3-statement financial analysis, highlighting the resilience of domestic markets.</p>
+    </div>
+</div>
             <li>Incorporated LBO analysis and M&A insights for the cement company’s environmental business division.</li>
-
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="lbo_analysis_pic.jpg" alt="LBO Analysis" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;">Incorporated LBO analysis and M&A insights for the cement company’s environmental business division.</p>
+    </div>
+</div>
         </ul>
 
         <div class="entry-title">
@@ -118,27 +198,127 @@
         </div>
         <ul>
             <li>Conducted analysis of Korea's wind and solar energy data, exploring renewable energy challenges in East Asia.</li>
-
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="wind_solar_pic.jpg" alt="Wind and Solar Analysis" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;">Conducted analysis of Korea's wind and solar energy data, exploring renewable energy challenges in East Asia.</p>
+    </div>
+</div>
             <li>Analyzed profitability of solar panels in urban areas using Matplotlib and Excel.</li>
-
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="solar_profitability_pic.jpg" alt="Solar Profitability Analysis" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;">Analyzed profitability of solar panels in urban areas using Matplotlib and Excel.</p>
+    </div>
+</div>
             <li>Co-authored a research paper on increasing data collection efficiency using Latent Dirichlet Allocation.</li>
-
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="lda_pic.jpg" alt="LDA Research" style="width: 100%;">
+        <p style="text-align: center; font-size: 14px;">Co-authored a research paper on increasing data collection efficiency using Latent Dirichlet Allocation.</p>
+    </div>
+</div>
         </ul>
     </div>
 
     <div class="resume-section additional-info">
         <h2>Additional Information</h2>
         <ul>
-            <li>Languages: Fluent in English, Native in Korean</li>
-            
-
+            <li>Languages:</li>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="english_pic.jpg" alt="English" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">English: Fluent in both speaking and writing.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="korean_pic.jpg" alt="Korean" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Korean: Native speaker with full proficiency.</p>
+        </div>
+    </div>
+</div>
+            <li>Skills:</li>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="excel_pic.jpg" alt="Excel" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Excel: Skilled in data analysis and modeling.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="powerpoint_pic.jpg" alt="PowerPoint" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">PowerPoint: Proficient in creating professional presentations.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="python_pic.jpg" alt="Python" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Python: Experienced in data analysis and scripting.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="matplotlib_pic.jpg" alt="Matplotlib" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Matplotlib: Knowledgeable in data visualization techniques.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="r_pic.jpg" alt="R" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">R: Competent in statistical computing and graphics.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="c_programming_pic.jpg" alt="C Programming" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">C Programming: Solid foundation in programming concepts.</p>
+        </div>
+    </div>
+</div>
+            <li>Certifications:</li>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="ib_certification_pic.jpg" alt="IB Analyst Certification" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">FCB Financial Academic Association IB Analyst Certification: Completed training in financial analysis and modeling.</p>
+        </div>
+    </div>
+</div>
+            <li>Leadership:</li>
+<div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="pycon_pic.jpg" alt="Pycon" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">2020 Pycon Lightning Talk Presenter: Presented on software development topics.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="chief_editor_pic.jpg" alt="Chief Editor" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">2019 Chief Editor: Led editorial team for university publications.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="student_president_pic.jpg" alt="Student President" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">2016 High School Student President: Represented the student body and led school initiatives.</p>
+        </div>
+    </div>
+</div>
             <li>Interests:</li>
 <div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
     <div style="display: flex; gap: 20px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 250px;">
             <img src="reading_pic.jpg" alt="Reading" style="width: 100%;">
             <p style="text-align: center; font-size: 14px;">Reading: Enjoys reading a wide variety of books, from fiction to non-fiction.</p>
-        </div></div>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="golf_pic.jpg" alt="Golf" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Golf: Passionate about learning and playing golf.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="learning_sports_pic.jpg" alt="Learning Sports" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Learning Sports: Enthusiastic about trying new sports and staying active.</p>
+        </div>
+    </div>
+</div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="golf_pic.jpg" alt="Golf" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Golf: Passionate about learning and playing golf.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="learning_sports_pic.jpg" alt="Learning Sports" style="width: 100%;">
+            <p style="text-align: center; font-size: 14px;">Learning Sports: Enthusiastic about trying new sports and staying active.</p>
+        </div>
+    </div>
+</div>
         </ul>
     </div>
 
